@@ -56,6 +56,11 @@ app.delete('/api/bookings', (req, res) => {
   res.status(200).json({ message: 'Booking deleted successfully' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}`);
+// });
+
+// With this
+module.exports = app;
+
+
